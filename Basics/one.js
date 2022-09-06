@@ -1,3 +1,3 @@
 //first JavaScript File
-var map = "Rahul";
+var @map = "Rahul";
 console.log(map);
