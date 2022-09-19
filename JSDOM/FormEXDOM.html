@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>DOM Example</title>
+</head>
+
+<body>
+    <form>
+
+        <label>Email ID:</label>
+        <input type="text" id="emailValue" onChange="funTest()" />
+    </form>
+    <script>
+        function funTest() {
+            let Ref = document.getElementById('emailValue').value
+            console.log(Ref)
+        }
+    </script>
+</body>
+
+</html>
