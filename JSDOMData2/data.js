@@ -56,8 +56,8 @@ function displayData() {
       <td>${employees[i].id}</td>
       <td>${employees[i].name.toUpperCase()}</td>
       <td>${employees[i].email}</td> 
-      <td>${employees[i].email.substr()}</td>
-    <tr>`
+      <td>${employees[i].email.split('@')[1]}</td >
+        <tr>`
         i++
     }
     document.getElementById('abc').innerHTML = rows
