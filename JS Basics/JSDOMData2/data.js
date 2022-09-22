@@ -49,16 +49,16 @@ let employees = [{ "id": 1, "name": "Josefa", "email": "jcobbald0@canalblog.com"
 { "id": 49, "name": "Jacklyn", "email": "jwintour1c@adobe.com" },
 { "id": 50, "name": "Madelaine", "email": "mfenn1d@naver.com" }]
 function displayData() {
-    let rows = ""
-    let i = 0;
-    while (i <= employees.length - 1) {
-        rows = rows + `<tr>
+  let rows = ""
+  let i = 0;
+  while (i <= employees.length - 1) {
+    rows = rows + `<tr>
       <td>${employees[i].id}</td>
       <td>${employees[i].name.toUpperCase()}</td>
       <td>${employees[i].email}</td> 
-      <td>${employees[i].email.split('@')[1]}</td >
+      <td><a href={http://${employees[i].email.split('@')[1]}} target="_blank">${employees[i].email.split('@')[1]}</a></td >
         <tr>`
-        i++
-    }
-    document.getElementById('abc').innerHTML = rows
+    i++
+  }
+  document.getElementById('abc').innerHTML = rows
 }
