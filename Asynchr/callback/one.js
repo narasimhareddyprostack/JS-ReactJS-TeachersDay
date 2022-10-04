@@ -7,4 +7,5 @@ let calc = (a, b, operation) => {
     }
 }
 console.log(calc(10, 20, "sum"))
+//while invoking a function, we are passing argu
 console.log(calc(10, 20, "multi"))
