@@ -1,16 +1,14 @@
-import About from './Components/About'
+import React from 'react'
 import Navbar from './Navbar/Navbar'
-import Message from './Components/Message'
-import Hero from './Components/Hero'
-function App() {
-    return <div>
-        <Navbar />
+import Hero from './Component/Hero'
+class App extends React.Component {
 
-        <br />
-        <Hero />
-        {/* <Message /> */}
+    render() {
 
-
-    </div>
+        return <div>
+            <Navbar />
+            <Hero />
+        </div>
+    }
 }
 export default App
