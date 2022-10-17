@@ -1,10 +1,10 @@
-import User from './PropsEx/User'
+import CompA from './Components/CompA'
 let App = () => {
 
     return <div>
         <h1>App Comp</h1>
         <hr />
-        <User />
+        <CompA />
     </div>
 
 }
