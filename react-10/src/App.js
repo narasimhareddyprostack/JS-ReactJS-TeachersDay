@@ -1,12 +1,11 @@
 import React from 'react'
-import Message from './Components/Message'
-import Counter from './Counter/Counter'
-function App() {
+import Navbar from './Navbar/Navbar'
+import Product from './Product/Product'
+const App = () => {
     return (
         <div>
-            <h1>App Component</h1>
-            <hr />
-            <Counter />
+            <Navbar />
+            <Product />
         </div>
     )
 }
