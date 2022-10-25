@@ -3,11 +3,12 @@ import Navbar from './Navbar/Navbar'
 //import Product from './Product/Product'
 import Employee from './Employee/Employee'
 import Message from './Message/Message'
+import Digit from './DigitalClock/Digit'
 const App = () => {
     return (
         <div>
             <Navbar />
-            <Message />
+            <Digit />
         </div>
     )
 }
