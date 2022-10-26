@@ -1,13 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class Navbar extends Component {
-    render() {
-        return (
-            <nav className="navbar navbar-dark bg-dark">
-                <a href="/" className="navbar-brand">React -List Rendering</a>
-            </nav>
-        )
-    }
+const Navbar = () => {
+    return <nav className="navbar navbar-dark bg-dark">
+        <a href="#" className="navbar-brand">React Form Handling Ex</a>
+    </nav>
 }
 
 export default Navbar
