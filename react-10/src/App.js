@@ -1,11 +1,18 @@
 import React from 'react'
-import Message from './Message/Message'
+import Navbar from './Navbar/Navbar'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Home from './Users/Home'
+import UserApp from './Users/UserApp'
 const App = () => {
     return (
         <div>
-            <h1>App Component</h1>
-            <hr />
-            <Message />
+            <Router>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/users" element={<UserApp />} />
+                </Routes>
+            </Router>
         </div>
     )
 }
