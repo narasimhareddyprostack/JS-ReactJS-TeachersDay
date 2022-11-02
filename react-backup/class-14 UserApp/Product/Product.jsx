@@ -22,7 +22,7 @@ const Product = () => {
                         <tr>
                             <td>{product.product_Name}</td>
                             <td>{product.price}</td>
-                            <td> <i className="fa fa-minus-circle" onClick={() => { setProduct({ ...product, qty: product.qty - 1 }) }} ></i> {product.qty} <i className="fa fa-plus-circle" onClick={incrHandler} ></i></td>
+                            <td> <i className="fa fa-minus-circle" onClick={() => { setProduct({ ...product, qty: product.qty - 1 }) }} ></i> {product.qty} <i className="fa fa-plus-circle" onClick={incrHandler  } ></i></td>
                             <td>{product.qty * product.price
                             }</td>
                         </tr>
