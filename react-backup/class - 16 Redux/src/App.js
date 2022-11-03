@@ -1,13 +1,12 @@
 import React from 'react'
-import Product from './Product/Product'
 import { Provider } from 'react-redux'
+import Message from './Message/Message'
 import { store } from './redux/store'
 const App = () => {
     return (
         <div>
             <Provider store={store}>
-                <h1>App Component</h1>
-                <Product />
+                <Message />
             </Provider>
         </div>
     )
