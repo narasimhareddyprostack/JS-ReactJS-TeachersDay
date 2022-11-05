@@ -11,9 +11,7 @@ let fetchUserSuccess = (users) => {
     return { type: USER_SUCCESS, payload: users }
 }
 let fetchUserFailure = (error) => {
-    return {
-        type: USER_FAILURE, paload: error
-    }
+    return { type: USER_FAILURE, payload: error }
 }
 //special action
 let fetchUsersAction = () => {
