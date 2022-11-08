@@ -1,20 +1,19 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Users from './Users/Users'
 import Navbar from './Navbar/Navbar'
-import { Provider } from 'react-redux'
-import { store } from './redux/store'
+import ProductList from './Products/ProductList'
+import CreateProduct from './Products/CreateProduct'
 const App = () => {
     return (
         <div>
-            <Provider store={store}>
-                <Router>
-                    <Navbar />
-                    <Routes>
-                        <Route path="/user" element={<Users />} />
-                    </Routes>
-                </Router>
-            </Provider>
+            <Router>
+                <Navbar />
+                <Routes>
+                    <Route path="/products" element={<ProductList />} />
+                    <Route path="/create" element={<CreateProduct />} />
+                </Routes>
+            </Router>
+
 
         </div>
     )

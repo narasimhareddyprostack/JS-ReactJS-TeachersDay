@@ -1,0 +1,75 @@
+BigBasket Application (MERN Stack) Full Stack Application
+---------------------
+
+Server Side Configuration (Express , Mongo DB / mongoose)
+-------------------------
+Modules : express , mongoose , cors , dotenv
+
+npm install express mongoose cors dotenv
+
+DB Design
+---------
+Database -> big-basket -> mongodb://127.0.0.1:27017/big-basket
+Table -> product
+fields -> name:string ,
+		image:string ,
+		price:number ,
+		qty:number ,
+		info:string ,
+		created:Date
+
+
+REST API (CRUD Operations with Products)
+----------------------------------------
+
+1) GET all Products
+
+   URL : http://127.0.0.1:5000/api/products
+   Method : GET
+   Fields : no-fields
+
+2) GET a single Product
+
+   URL : http://127.0.0.1:5000/api/products/:id
+   Method : GET
+   Fields : productId
+
+3) Create a Product
+
+   URL : http://127.0.0.1:5000/api/products
+   Method : POST
+   Fields : name , image , price , qty , info
+
+4) Update a Product
+
+	URL : http://127.0.0.1:5000/api/products/:id
+	Method : PUT
+	Fields : name , image , price , qty , info
+
+5) Delete a Product
+	URL : http://127.0.0.1:5000/api/products/:id
+	Method : DELETE
+	Fields : no-fields
+
+Client Side Application configuration (React JS) (class based)
+------------------------------------------------
+components : home , products , admin , create-product , update-product
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
